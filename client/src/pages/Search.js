@@ -27,7 +27,7 @@ class Search extends React.Component {
             link: bookData.volumeInfo.previewLink,
             isbn: bookData.volumeInfo.industryIdentifiers[0].identifier,
             published: bookData.volumeInfo.publishedDate,
-            subject: bookData.volumeInfo.categories,
+            categories: bookData.volumeInfo.categories,
             pagecount: bookData.volumeInfo.pageCount
         }
     }

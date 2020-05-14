@@ -7,9 +7,9 @@ import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 
 // pages
-import NoMatch from "./pages/NoMatch";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
+import NoMatch from "./pages/NoMatch";
 
 // css
 import "./App.css";

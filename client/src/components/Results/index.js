@@ -58,7 +58,7 @@ class Results extends Component {
                                         </div>
                                         <div className="col-md-10">
                                             <div className="card-body">
-                                                <h6 className="text-danger">{result.subject}</h6>
+                                                <h6 className="text-danger">{result.categories}</h6>
                                             <h6 className="text-secondary">{result.isbn} published on {result.published}</h6>
                                                 <p className="card-text">{result.description}</p>
                                             </div>
