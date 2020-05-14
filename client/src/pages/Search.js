@@ -10,9 +10,11 @@ class Search extends React.Component {
     };
     
     componentDidMount() {
-        this.searchBook();
+        this.searchBook("Harry Potter");
     }
 
+
+    // https://developers.google.com/books/docs/v1/reference/volumes
     makeBook = bookData => {
         return {
             _id: bookData.id,
@@ -46,6 +48,9 @@ class Search extends React.Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
+        const value = document.getElementById('search').value;
+        console.log(value);
+        
         this.searchBook(this.state.search);
         // console.log(this.state.books);
         
