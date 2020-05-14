@@ -15,9 +15,7 @@ const bookSeed =
     image: "https://books.google.com/books/content?id=zr5NBldVA5UC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
     link: "https://books.google.com/books?id=zr5NBldVA5UC&dq=title:And+Then+There+Were+None&hl=&source=gbs_api",
     title: "And Then There Were None",
-    isbn: "9780312330873",
-    published: "May 3, 2004",
-    subject: "Fiction"
+    isbn: "9780312330873"
 }
 
 
