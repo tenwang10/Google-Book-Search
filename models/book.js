@@ -8,7 +8,7 @@ const bookSchema = new Schema({
     description: { type: String },
     image: { type: String },
     link: { type: String },
-    isbn: { type: Number },
+    isbn: { type: String },
     published: { type: Date },
     subject: { type: String}
 });

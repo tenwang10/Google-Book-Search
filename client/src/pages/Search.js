@@ -8,7 +8,7 @@ class Search extends React.Component {
         value: "",
         books: []
     };
-
+    
     componentDidMount() {
         this.searchBook();
     }
@@ -17,13 +17,16 @@ class Search extends React.Component {
         return {
             _id: bookData.id,
             title: bookData.volumeInfo.title,
-            authors: bookData.volumeInfo.authors,
+            subtitle: bookData.volumeInfo.subtitle,
+            authors: bookData.volumeInfo.authors===undefined ? bookData.volumeInfo.authors : bookData.volumeInfo.authors.join(', '),
+            // authors: bookData.volumeInfo.authors.join(', '),
             description: bookData.volumeInfo.description,
-            image: bookData.volumeInfo.imageLinks.thumbnail,
+            image: bookData.volumeInfo.imageLinks===undefined ? bookData.volumeInfo.title : bookData.volumeInfo.imageLinks.thumbnail,
             link: bookData.volumeInfo.previewLink,
-            isbn: bookData.volumeInfo.isbn,
-            published: bookData.volumeInfo.published,
-            subject: bookData.volumeInfo.subject
+            isbn: bookData.volumeInfo.industryIdentifiers[0].identifier,
+            published: bookData.volumeInfo.publishedDate,
+            subject: bookData.volumeInfo.categories,
+            pagecount: bookData.volumeInfo.pageCount
         }
     }
 
@@ -44,6 +47,8 @@ class Search extends React.Component {
     handleFormSubmit = event => {
         event.preventDefault();
         this.searchBook(this.state.search);
+        // console.log(this.state.books);
+        
     };
 
     render() {
@@ -56,7 +61,7 @@ class Search extends React.Component {
                 />
                 <div className="container">
                     <h2>Results</h2>
-                    <Results books={this.state.books} />
+                    <Results books={this.state.books} />                    
                 </div>
             </div>
         )

@@ -4,7 +4,7 @@ import React from "react";
 function Form(props){
 return (
   <div className="container">
-  <form>
+  <form className="mb-5">
     <div className="form-group">
       <label htmlFor="search"><h2>Book Search</h2></label>
       <input
@@ -20,6 +20,7 @@ return (
         Search
         </button>
     </div>
+    <hr className="border border-secondary" />
   </form>
   </div>
 );

@@ -30,25 +30,37 @@ class Results extends Component {
         return (
             <div>
                 {!this.props.books.length ? (
-                    <h1 className="text-center">No Results to Display</h1>
+                    <h2 className="text-center">No Results to Display</h2>
                 ) : (
                         <div>
                             {this.props.books.map(result => (
-                                <div className="card mb-3" key={result._id}>
+
+                                <div className="card mb-3 p-4" key={result._id}>
+                                    <div className="row mb-5">
+                                        <div className="col-md-10">
+                                            <h4 className="card-title">{result.title}</h4>
+                                            <h6 className="text-secondary">{result.subtitle}</h6>
+                                            <h6 className="text-secondary">Written by {result.authors}</h6>
+                                        </div>
+                                        <div className="col-md-2">
+                                            <div>
+                                                <a href={result.link} className="btn btn-outline-dark" target="_blank" >View</a>
+                                                <button onClick={() => this.handleSave(result)} className="btn btn-outline-danger ml-2" >
+                                                    {this.state.savedBooks.map(book => book._id).includes(result._id) ? "Unsave" : "Save"}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div className="row">
                                         <div className="col-md-2">
                                             <img alt={result.title} className="img-fluid" src={result.image} />
+                            <h6 className="text-secondary"><br />Page Count: <span className="text-danger">{result.pagecount}</span></h6>
                                         </div>
                                         <div className="col-md-10">
                                             <div className="card-body">
-                                                <h5 className="card-title">{result.title} by {result.authors}</h5>
+                                                <h6 className="text-danger">{result.subject}</h6>
+                                            <h6 className="text-secondary">{result.isbn} published on {result.published}</h6>
                                                 <p className="card-text">{result.description}</p>
-                                                <div>
-                                                    <a href={result.link} className="btn badge-pill btn-outline-dark mt-3" target="_blank" >View</a>
-                                                    <button onClick={() => this.handleSave(result)} className="btn badge-pill btn-outline-warning mt-3 ml-3" >
-                                                        {this.state.savedBooks.map(book => book._id).includes(result._id) ? "Unsave" : "Save"}
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
