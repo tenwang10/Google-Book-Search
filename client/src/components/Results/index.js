@@ -53,7 +53,7 @@ class Results extends Component {
                                     </div>
                                     <div className="row">
                                         <div className="col-md-2">
-                                            <img alt={result.title} className="img-fluid" src={result.image} />
+                                            <img alt={result.title} className="img-fluid border border-dark p-1" src={result.image} />
                             <h6 className="text-secondary"><br />Page Count: <span className="text-danger">{result.pagecount}</span></h6>
                                         </div>
                                         <div className="col-md-10">
