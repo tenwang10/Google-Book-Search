@@ -37,12 +37,12 @@ class Results extends Component {
 
                                 <div className="card mb-3 p-4" key={result._id}>
                                     <div className="row mb-5">
-                                        <div className="col-md-10">
+                                        <div className="col-md-9">
                                             <h4 className="card-title">{result.title}</h4>
                                             <h6 className="text-secondary">{result.subtitle}</h6>
                                             <h6 className="text-secondary">Written by {result.authors}</h6>
                                         </div>
-                                        <div className="col-md-2">
+                                        <div className="col-md-3">
                                             <div>
                                                 <a href={result.link} className="btn btn-outline-dark" target="_blank" >View</a>
                                                 <button onClick={() => this.handleSave(result)} className="btn btn-outline-danger ml-2" >

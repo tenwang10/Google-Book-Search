@@ -1,0 +1,16 @@
+Front-end Branch:
+    ☐ add footer
+    ✔ add gradient background @done (5/14/2020, 8:02:19 PM)
+    ☐ add about section - talk about this app and blog
+
+
+Back-end Branch:
+    ☐ when "search" button clicked, input has to be empty
+    ☐ make sure serviceWorker.js is working properly
+    ☐ try to get more result and add pagination
+    ✔ deploy on heroku @done (5/14/2020, 8:07:54 PM) google-book-search-desaign-app.herokuapp.com
+
+
+Blog:
+    ☐ create sections to point out the functionality @critical 
+
