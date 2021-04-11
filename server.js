@@ -4,6 +4,8 @@ const app = express();
 // routes
 const routes = require("./routes");
 
+require('dotenv').config();
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -16,8 +18,9 @@ app.use(routes);
 
 // MongoDB
 const mongoose = require("mongoose");
+// const { config } = require("dotenv/types");
 // Connect to the MongoDB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", { useNewUrlParser: true,
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true,
 useFindAndModify: false });
 
 // port
