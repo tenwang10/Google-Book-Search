@@ -1,6 +1,6 @@
 ## Google Book Search by Desaign Studio
 
-Descriptions
+Google book search for and save books of interest. Using Google Book API to search books to read and find details about authors, page count, isbn, publisher, pblished on, and description about the book.
 
 <img src="./SS1.png" alt="Screen Shot" width="500">
 

@@ -93,6 +93,7 @@
   </head>
 
   <body>
+    <div id="loader-wrapper" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: flex; justify-content: center; align-items: center; background-color: #343a40; z-index: 9999999 !important"><object data="https://desaign.app/clients/cli/images/logo/mainlogo-rep-7sec.svg" type="image/svg+xml" width="80%"></object></div>
     <!-- Main Container -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
@@ -101,9 +102,7 @@
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5 ps-3">
       <a class="navbar-brand" href="https://desaign.app" style="font-size: 1rem !important">POWERED BY <span class="text-warning">DESAIGN.STUDIO</span></a>
     </nav>
-
     <!-- Developer JavaScripts -->
-    <script src="https://desaign.app/clients/cli/javascript/desaign-loader/desaign-loader.js"></script>
-    <!-- <script src="" type="text/javascript"></script> -->
+    <script>$(window).on("load",(function(){setTimeout((function(){$("#loader-wrapper").fadeOut(500)}),5e3)}));</script>
   </body>
 </html>

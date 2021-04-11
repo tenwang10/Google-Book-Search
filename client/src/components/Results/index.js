@@ -43,9 +43,9 @@ class Results extends Component {
                                             <h6 className="text-secondary">Written by {result.authors}</h6>
                                         </div>
                                         <div className="col-md-3">
-                                            <div>
+                                            <div className="text-end">
                                                 <a href={result.link} className="btn btn-outline-dark" target="_blank" >View</a>
-                                                <button onClick={() => this.handleSave(result)} className="btn btn-outline-danger ml-2" >
+                                                <button onClick={() => this.handleSave(result)} className="btn btn-outline-danger ms-2" >
                                                     {this.state.savedBooks.map(book => book._id).includes(result._id) ? "Unsave" : "Save"}
                                                 </button>
                                             </div>

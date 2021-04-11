@@ -11,9 +11,6 @@ import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import NoMatch from "./pages/NoMatch";
 
-// css
-import "./App.css";
-
 // class component
 class App extends Component {
  
