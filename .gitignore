@@ -103,5 +103,21 @@ dist
 # TernJS port file
 .tern-port
 
-0HN0
-tasks.todo 
+# Node build artifacts
+node_modules
+npm-debug.log
+
+# Local development
+*.env
+*.dev
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+#Test
+0HN0/
+changelog.todo
+# find . -type f -name '._*' -delete
+# git rm -r --cached .

@@ -1,29 +1,33 @@
-Front-end Branch:
-    Add:
-        ☐ add footer
-        ✔ add gradient background @done (5/14/2020, 8:02:19 PM)
-        ☐ add about section - talk about this app and blog
-    Fix:
-    Change:
-        ☐ make save button first then view button
-        ☐ change save color to green and unsave color red
-        ☐ float right to both buttons
+Added:
+    ✔ add footer @done (April 11th 2021, 15:50)
+    ✔ add gradient background @done (5/14/2020, 8:02:19 PM)
+    ☐ add about section - talk about this app and blog
+    ☐ add sections and search section related to that section
 
 
-Back-end Branch:
-    Add:
-        ☐ try to get more result and add pagination
-        ☐ expand search posibilities with different ways
-    Fix:
-        ☐ when "search" button clicked, input has to be empty
-        ☐ make sure serviceWorker.js is working properly
-        ☐ when someone search, show new result first
-    Change:
-        ☐ saved page - when "unsave" clicked, makesure it removes from a list rightaway 
-        ✔ deploy on heroku @done (5/14/2020, 8:07:54 PM) google-book-search-desaign-app.herokuapp.com
+Changed:
+    ☐ change save color to green and unsave color red
+    ☐ expand search posibilities with different ways
+    ☐ saved page - when "unsave" clicked, makesure it removes from a list rightaway 
 
 
-Blog:
-    ☐ create sections to point out the functionality @critical 
-    ☐ add credits
+Removed:
 
+
+Fixed:
+    ☐ make save button first then view button
+    ☐ float right to both buttons
+    ☐ try to get more result and add pagination
+    ☐ when "search" button clicked, input has to be empty
+    ☐ when someone search, show new result first
+
+
+Security:
+    ☐ make sure serviceWorker.js is working properly
+
+
+Released:
+    ☐ deploy on heroku
+
+    
+Requested:
